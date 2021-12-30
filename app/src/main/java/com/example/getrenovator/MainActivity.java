@@ -6,6 +6,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -17,6 +19,8 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+
+import java.lang.reflect.Type;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -60,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
         String password = ((EditText) findViewById(R.id.editTextTextPassword2)).getText().toString();
         String confirmPass = ((EditText) findViewById(R.id.editTextTextPassword3)).getText().toString();
 
-        if(password != confirmPass){
+        if(!password.equals(confirmPass)){
             Toast.makeText(MainActivity.this, "The passwords must match.", Toast.LENGTH_LONG).show();
             return;
         }
@@ -83,7 +87,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void addData(){
-        Person person = new Person();
+
+        String firstName = ((EditText) findViewById(R.id.editTextTextPersonName)).getText().toString();
+        String lastName = ((EditText) findViewById(R.id.editTextTextPersonName2)).getText().toString();
+        String email = ((EditText) findViewById(R.id.editTextTextEmailAddress2)).getText().toString();
+        String phone = ((EditText) findViewById(R.id.editTextPhone)).getText().toString();
+
+        RadioGroup radioGroup=(RadioGroup)findViewById(R.id.radioGroup);
+int selected=radioGroup.getCheckedRadioButtonId();
+        RadioButton radioButton=findViewById(selected);
+        UserType type = UserType.valueOf(radioButton.getText().toString());
+
+        Person person = new Person(firstName, lastName, email, phone, type);
 
         // Write a message to the database
         FirebaseDatabase database = FirebaseDatabase.getInstance();
