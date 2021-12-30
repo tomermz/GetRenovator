@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "244907550643",
+    "project_id": "getrenovator",
+    "storage_bucket": "getrenovator.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:244907550643:android:4be8c9320ccb783ccecdc6",
+        "android_client_info": {
+          "package_name": "com.example.getrenovator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "244907550643-49sg914fkjhq2lgavd0j9hq1t1tgrib6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZEXsxVL_ytSCXcBLkEtUF209tozmnGbo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "244907550643-49sg914fkjhq2lgavd0j9hq1t1tgrib6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
