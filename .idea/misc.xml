@@ -5,7 +5,7 @@
       <map>
         <entry key="..\:/Users/Tomer Mizrahi/AndroidStudioProjects/GetRenovator/app/src/main/res/layout/activity_main.xml" value="0.1381340579710145" />
         <entry key="..\:/Users/Tomer Mizrahi/AndroidStudioProjects/GetRenovator/app/src/main/res/layout/fragment_landing_page.xml" value="0.22" />
-        <entry key="..\:/Users/Tomer Mizrahi/AndroidStudioProjects/GetRenovator/app/src/main/res/layout/fragment_register_page.xml" value="0.22" />
+        <entry key="..\:/Users/Tomer Mizrahi/AndroidStudioProjects/GetRenovator/app/src/main/res/layout/fragment_register_page.xml" value="0.3333333333333333" />
       </map>
     </option>
   </component>
@@ -14,5 +14,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.22" />
+      </ProjectState>
+    </option>
   </component>
 </project>
