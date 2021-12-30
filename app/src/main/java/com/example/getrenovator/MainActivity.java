@@ -58,6 +58,12 @@ public class MainActivity extends AppCompatActivity {
 
         String email = ((EditText) findViewById(R.id.editTextTextEmailAddress2)).getText().toString();
         String password = ((EditText) findViewById(R.id.editTextTextPassword2)).getText().toString();
+        String confirmPass = ((EditText) findViewById(R.id.editTextTextPassword3)).getText().toString();
+
+        if(password != confirmPass){
+            Toast.makeText(MainActivity.this, "The passwords must match.", Toast.LENGTH_LONG).show();
+            return;
+        }
 
         mAuth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {

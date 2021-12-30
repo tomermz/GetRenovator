@@ -65,17 +65,17 @@ public class LandingPage extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_landing_page, container, false);
 
-        Button button = view.findViewById(R.id.logInButton);
-        Button button2 = view.findViewById(R.id.regPageButton);
+        Button buttonToLogin = view.findViewById(R.id.logInButton);
+        Button buttonToRegisterPage = view.findViewById(R.id.regPageButton);
 
-        button.setOnClickListener(new View.OnClickListener() {
+     /*   buttonToLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
             }
         });
-
-        button2.setOnClickListener(new View.OnClickListener() {
+*/
+        buttonToRegisterPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
