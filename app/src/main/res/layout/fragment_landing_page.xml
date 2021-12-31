@@ -97,6 +97,7 @@
         android:layout_marginRight="100dp"
         android:layout_marginBottom="10dp"
         android:layout_weight="1"
+        android:onClick="loginFunc"
         android:text="Login" />
 
     <Button
