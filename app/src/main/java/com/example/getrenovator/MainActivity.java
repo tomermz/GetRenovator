@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
         String phone = ((EditText) findViewById(R.id.editTextPhone)).getText().toString();
 
         RadioGroup radioGroup=(RadioGroup)findViewById(R.id.radioGroup);
-int selected=radioGroup.getCheckedRadioButtonId();
+        int selected=radioGroup.getCheckedRadioButtonId();
         RadioButton radioButton=findViewById(selected);
         UserType type = UserType.valueOf(radioButton.getText().toString());
 
