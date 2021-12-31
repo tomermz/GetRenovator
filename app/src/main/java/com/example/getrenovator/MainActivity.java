@@ -76,6 +76,7 @@ public class MainActivity extends AppCompatActivity {
                         if (task.isSuccessful()) {
 
                             Toast.makeText(MainActivity.this, "reg ok", Toast.LENGTH_LONG).show();
+                            onBackPressed();
                         } else {
 
                             Toast.makeText(MainActivity.this, "reg fail", Toast.LENGTH_LONG).show();
