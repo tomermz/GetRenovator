@@ -69,9 +69,9 @@ public class RegisterPage extends Fragment {
         buttonToReg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 MainActivity mainActivity = (MainActivity) getActivity();
-                mainActivity.regFunc(view);
-                mainActivity.addData();
+                mainActivity.regFunc();
             }
         });
         return view;

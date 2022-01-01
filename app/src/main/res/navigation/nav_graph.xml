@@ -16,10 +16,26 @@
         <action
             android:id="@+id/action_landingPage_to_registerPage2"
             app:destination="@id/registerPage" />
+        <action
+            android:id="@+id/action_landingPage_to_clientPage"
+            app:destination="@id/clientPage" />
+        <action
+            android:id="@+id/action_landingPage_to_renovatorPage"
+            app:destination="@id/renovatorPage" />
     </fragment>
     <fragment
         android:id="@+id/registerPage"
         android:name="com.example.getrenovator.Fragments.RegisterPage"
         android:label="fragment_register_page"
         tools:layout="@layout/fragment_register_page" />
+    <fragment
+        android:id="@+id/renovatorPage"
+        android:name="com.example.getrenovator.Fragments.RenovatorPage"
+        android:label="fragment_renovator_page"
+        tools:layout="@layout/fragment_renovator_page" />
+    <fragment
+        android:id="@+id/clientPage"
+        android:name="com.example.getrenovator.Fragments.ClientPage"
+        android:label="fragment_client_page"
+        tools:layout="@layout/fragment_client_page" />
 </navigation>

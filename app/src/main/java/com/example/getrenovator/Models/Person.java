@@ -1,4 +1,4 @@
-package com.example.getrenovator;
+package com.example.getrenovator.Models;
 
 public class Person {
 
