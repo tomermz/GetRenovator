@@ -14,7 +14,7 @@
         android:layout_height="match_parent"
         android:layout_weight="0.95"
         android:gravity="center"
-        android:text="Register page"
+        android:text="Registration page"
         android:textSize="24sp" />
 
 
